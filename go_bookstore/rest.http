@@ -1,0 +1,12 @@
+### get books
+GET http://127.0.0.1:9010/book/
+content-type: application/json
+
+### create book
+POST http://127.0.0.1:9010/book/
+
+{
+    "Name": "Book name two",
+    "Author": "Riad",
+    "Publication": "riad.com"
+}
