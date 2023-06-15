@@ -1,0 +1,19 @@
+### get account list
+GET http://127.0.0.1:8080/accounts?page_id=1&page_size=10
+Content-Type: application/json
+Accept: application/json
+
+### get account by id
+GET http://127.0.0.1:8080/accounts/205
+Content-Type: application/json
+Accept: application/json
+
+### create account
+POST http://127.0.0.1:8080/accounts/
+Content-Type: application/json
+Accept: application/json
+
+{
+    "Owner": "Imran",
+    "Currency": "BDT"
+}
