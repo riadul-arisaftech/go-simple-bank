@@ -7,6 +7,9 @@ createdb:
 dropdb: 
 	docker exec -it postgres15 dropdb simple_bank_db
 
+migrateCreate:
+	migrate create -ext sql -dir db/migration -seq ${name}
+
 migrateup:
 	migrate -path db/migration -database "postgresql://root:2654@localhost:5432/simple_bank_db?sslmode=disable" -verbose up
 
