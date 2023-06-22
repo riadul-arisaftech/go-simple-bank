@@ -14,8 +14,8 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "Owner": "Imran",
-    "Currency": "BDT"
+    "Owner": "gxifdg",
+    "Currency": "USD"
 }
 
 ### create transfers

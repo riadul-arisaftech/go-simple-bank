@@ -11,10 +11,10 @@ migrateCreate:
 	migrate create -ext sql -dir db/migration -seq ${name}
 
 migrateup:
-	migrate -path db/migration -database "postgresql://root:2654@localhost:5432/simple_bank_db?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://root:2654@localhost:5432/simple_bank_db?sslmode=disable" -verbose up ${version}
 
 migratedown:
-	migrate -path db/migration -database "postgresql://root:2654@localhost:5432/simple_bank_db?sslmode=disable" -verbose down
+	migrate -path db/migration -database "postgresql://root:2654@localhost:5432/simple_bank_db?sslmode=disable" -verbose down ${version}
 
 sqlc:
 	sqlc generate
